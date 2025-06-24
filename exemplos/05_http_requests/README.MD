@@ -12,19 +12,19 @@ go run main.go
 
 - **net/http**: pacote padrão para criar clientes e servidores HTTP.
 
-- **http.Get(url)**: envia uma requisição GET e retorna um `*http.Response`.
+- **http.Get(url)**: envia uma requisição GET e retorna um \*http.Response.
 
-- **http.Post(url, contentType, body)**: envia uma requisição POST com corpo, retornando um `*http.Response`.
+- **http.Post(url, contentType, body)**: envia uma requisição POST com corpo, retornando um \*http.Response.
 
 - **defer resp.Body.Close()**: fecha o corpo da resposta após o uso, evitando vazamentos de recursos.
 
 - **io/ioutil.ReadAll(resp.Body)**: lê todo o conteúdo da resposta como slice de bytes.
 
-- **encoding/json** (`json.Unmarshal` / `json.Marshal`): converte entre JSON e structs Go.
+- **encoding/json (json.Unmarshal / json.Marshal)**: converte entre JSON e structs Go.
 
 - **http.NewRequest(method, url, body)**: cria requisições HTTP customizadas para definir headers e corpo.
 
-- **client := &http.Client{}** / **client.Do(req)**: envia requisições customizadas, permitindo configuração de timeout e transporte.
+- **client := &http.Client{} / client.Do(req)**: envia requisições customizadas, permitindo configuração de timeout e transporte.
 
 - **resp.StatusCode**: verifica o código de status HTTP retornado pelo servidor.
 

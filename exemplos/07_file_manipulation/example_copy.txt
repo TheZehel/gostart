@@ -1,0 +1,2 @@
+Linha 1: Olá, Go!
+Linha 2: Manipulação de arquivos.
